@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from 'react-router-dom';
 import '@styles/variables.css';
 import '@styles/typography.css';
+import '@styles/globals.css';
 
 import './index.css';
 
