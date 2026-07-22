@@ -1,6 +1,7 @@
 import Hero from './components/Hero';
 import Services from './components/Services';
-import WhyChooseUs from '@/components/WhyChooseUs';
+import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
+import Process from './components/Process/Process';
 
 function Home() {
   return (
@@ -8,6 +9,7 @@ function Home() {
       <Hero />
       <Services />
       <WhyChooseUs />
+      <Process />
     </>
   );
 }
