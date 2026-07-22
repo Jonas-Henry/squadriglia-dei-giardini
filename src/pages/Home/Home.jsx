@@ -1,5 +1,13 @@
+import Hero from './components/Hero';
+import Services from './components/Services';
+
 function Home() {
-  return <h1>Home</h1>;
+  return (
+    <>
+      <Hero />
+      <Services />
+    </>
+  );
 }
 
 export default Home;
