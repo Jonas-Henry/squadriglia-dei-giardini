@@ -2,6 +2,23 @@
   padding-bottom: var(--space-2xl);
 }
 
+.icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, .15);
+
+  color: white;
+}
+
 .header {
   max-width: 650px;
   margin: 0 auto 3rem;
@@ -35,11 +52,12 @@
 
   border-radius: var(--radius-lg);
 
-  transition: transform .3s ease;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
 }
 
 .card h3 {

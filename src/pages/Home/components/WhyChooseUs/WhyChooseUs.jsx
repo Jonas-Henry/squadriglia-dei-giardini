@@ -1,20 +1,25 @@
 import Container from '@components/common/Container';
 
+import { Award, ShieldCheck, Clock3 } from 'lucide-react';
+
 import styles from './WhyChooseUs.module.css';
 
 const advantages = [
   {
     id: 1,
+    icon: Award,
     title: 'Esperienza',
     description: 'Anni di esperienza nella progettazione e manutenzione di spazi verdi.',
   },
   {
     id: 2,
+    icon: ShieldCheck,
     title: 'Cura dei dettagli',
     description: 'Ogni progetto viene realizzato con precisione e attenzione ai particolari.',
   },
   {
     id: 3,
+    icon: Clock3,
     title: 'Puntualità',
     description: 'Rispettiamo tempi e impegni, garantendo un servizio affidabile.',
   },
@@ -34,13 +39,22 @@ function WhyChooseUs() {
         </header>
 
         <div className={styles.grid}>
-          {advantages.map((advantage) => (
-            <article key={advantage.id} className={styles.card}>
-              <h3>{advantage.title}</h3>
+          {advantages.map((advantage) => {
+            const Icon = advantage.icon;
 
-              <p>{advantage.description}</p>
-            </article>
-          ))}
+            return (
+              <article key={advantage.id} className={styles.card}>
+                <div>
+                  <Icon size={34} strokeWidth={2} />
+                </div>
+
+                <h3>{advantage.title}</h3>
+
+                <p>{advantage.description}</p>
+              </article>
+            );
+          })}
+          )
         </div>
       </Container>
     </section>

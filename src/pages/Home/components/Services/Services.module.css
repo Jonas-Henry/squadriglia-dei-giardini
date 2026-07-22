@@ -2,6 +2,23 @@
   padding-block: var(--space-2xl);
 }
 
+.icon {
+  width: 70px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+
+  border-radius: 50%;
+
+  background-color: rgba(46, 125, 50, .1);
+
+  color: var(--color-primary);
+}
+
 .header {
   max-width: 650px;
   margin: 0 auto 3rem;
@@ -37,9 +54,9 @@
 }
 
 .card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
 }
 
 .card h3 {
