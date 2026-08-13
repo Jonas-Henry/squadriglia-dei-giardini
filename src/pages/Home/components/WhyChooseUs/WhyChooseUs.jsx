@@ -54,7 +54,6 @@ function WhyChooseUs() {
               </article>
             );
           })}
-          )
         </div>
       </Container>
     </section>

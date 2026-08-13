@@ -1,0 +1,89 @@
+.testimonials {
+  padding-block: var(--space-2xl);
+  background: var(--color-surface);
+}
+
+.header {
+  max-width: 650px;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.header h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--color-primary);
+}
+
+.header p {
+  color: var(--color-text-light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  padding: 2rem;
+
+  background: var(--color-background);
+
+  border-radius: var(--radius-lg);
+
+  box-shadow: var(--shadow-sm);
+
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: var(--shadow-lg);
+}
+
+.stars {
+  display: flex;
+  gap: .25rem;
+
+  margin-bottom: 1.5rem;
+
+  color: #d4a017;
+}
+
+.comment {
+  margin-bottom: 2rem;
+
+  color: var(--color-text-light);
+
+  line-height: 1.8;
+
+  font-style: italic;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer strong {
+  color: var(--color-primary);
+}
+
+.footer span {
+  color: var(--color-text-light);
+  font-size: .95rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -72,7 +72,6 @@ function Services() {
               </article>
             );
           })}
-          )
         </div>
       </Container>
     </section>
