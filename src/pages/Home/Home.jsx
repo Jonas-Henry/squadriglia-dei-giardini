@@ -4,6 +4,7 @@ import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Process from './components/Process/Process';
 import Gallery from './components/Gallery';
 import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Process />
       <Gallery />
       <Testimonials />
+      <Contact />
     </>
   );
 }
